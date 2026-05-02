@@ -50,6 +50,7 @@ public class RegistrationApp extends Application {
         // First Name
         TextField firstNameField = new TextField();
         firstNameField.setPromptText("John");
+        firstNameField.setId("firstName");
         Label firstNameLabel = new Label("First Name:");
         Label firstNameError = createErrorLabel("2-25 characters.");
         grid.add(firstNameLabel, 0, 1);
@@ -59,6 +60,7 @@ public class RegistrationApp extends Application {
         // Last Name
         TextField lastNameField = new TextField();
         lastNameField.setPromptText("Doe");
+        lastNameField.setId("lastName");
         Label lastNameLabel = new Label("Last Name:");
         Label lastNameError = createErrorLabel("2-25 characters.");
         grid.add(lastNameLabel, 0, 2);
@@ -68,6 +70,7 @@ public class RegistrationApp extends Application {
         // Email
         TextField emailField = new TextField();
         emailField.setPromptText("johndoe@farmingdale.edu");
+        emailField.setId("email");
         Label emailLabel = new Label("Email:");
         Label emailError = createErrorLabel("Must end in @farmingdale.edu");
         grid.add(emailLabel, 0, 3);
@@ -77,6 +80,7 @@ public class RegistrationApp extends Application {
         // Date of Birth
         TextField dobField = new TextField();
         dobField.setPromptText("MM/DD/YYYY");
+        dobField.setId("dob");
         Label dobLabel = new Label("Date of Birth:");
         Label dobError = createErrorLabel("Format: MM/DD/YYYY");
         grid.add(dobLabel, 0, 4);
@@ -86,6 +90,7 @@ public class RegistrationApp extends Application {
         // Zip Code
         TextField zipField = new TextField();
         zipField.setPromptText("11735");
+        zipField.setId("zip");
         Label zipLabel = new Label("Zip Code:");
         Label zipError = createErrorLabel("5-digit number.");
         grid.add(zipLabel, 0, 5);
@@ -94,6 +99,7 @@ public class RegistrationApp extends Application {
 
         // "Add" button
         addButton = new Button("Add");
+        addButton.setId("addButton");
         addButton.setDisable(true);
         grid.add(addButton, 1, 6);
 
