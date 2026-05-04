@@ -15,10 +15,12 @@ public class RegistrationAppTest extends ApplicationTest {
     @BeforeAll
     public static void setup() {
         // Delay between keystrokes in milliseconds
-        System.setProperty("testfx.robot.write_sleep", "100");
+        System.setProperty("testfx.robot.write_sleep", "50");
+        //System.setProperty("testfx.robot.write_sleep", "150");
 
         // Delay between other actions like clicking
-        System.setProperty("testfx.robot.sleep", "500");
+        System.setProperty("testfx.robot.sleep", "250");
+        //System.setProperty("testfx.robot.sleep", "750");
     }
 
     @Override
@@ -58,7 +60,7 @@ public class RegistrationAppTest extends ApplicationTest {
         // 1. Fills out the form with an INVALID email
         clickOn("#firstName").write("Olamide");
         clickOn("#lastName").write("Aroso");
-        clickOn("#email").write("ola@gmail.com"); // Invalid domain
+        clickOn("#email").write("olarockss@gmail.com"); // Invalid domain
         clickOn("#dob").write("05/05/2002");
         clickOn("#zip").write("11735");
 
